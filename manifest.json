@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Dynamic Gruvbox Theme",
+    "version": "1.0",
+    "description": "Toggle between dark or light gruvbox theme",
+    "homepage_url": "https://github.com/jedloy/",
+    "icons": {
+        "48": "icons/dgt-48.png",
+        "96": "icons/dgt-96.png"
+    },
+    "permissions": [
+        "theme"
+    ],
+    "browser_action": {
+        "default_icon": "icons/dgt-32.png",
+        "default_title": "Dynamic Gruvbox Theme",
+        "default_popup": "switcher.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
+}

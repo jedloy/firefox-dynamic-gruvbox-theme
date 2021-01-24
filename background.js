@@ -106,22 +106,5 @@ function toggleTheme() {
     }
 }
 
-function sendTheme(sendResponse) {
-    if (currentTheme === dayTheme) {
-        sendResponse("day");
-    } else {
-        sendResponse("night");
-    }
-}
-
-function handleMessage(request, sender, sendResponse) {
-    if (request.greeting === "toggleTheme") {
-        toggleTheme();
-        sendTheme(sendResponse);
-    } else {
-        sendTheme(sendResponse);
-    }
-}
-
-browser.runtime.onMessage.addListener(handleMessage);
 setTheme(dayTheme);
+browser.browserAction.onClicked.addListener(toggleTheme);

@@ -13,8 +13,7 @@
     ],
     "browser_action": {
         "default_icon": "icons/dgt-32.png",
-        "default_title": "Dynamic Gruvbox Theme",
-        "default_popup": "switcher.html"
+        "default_title": "Dynamic Gruvbox Theme"
     },
     "background": {
         "scripts": ["background.js"]

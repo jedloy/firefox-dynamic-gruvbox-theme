@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Dynamic Gruvbox Theme",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Toggle between dark or light gruvbox theme",
     "homepage_url": "https://github.com/jedloy/",
     "icons": {

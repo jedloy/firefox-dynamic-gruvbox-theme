@@ -1,4 +1,4 @@
-var currentTheme = '';
+var currentTheme = 'none';
 
 var dark0 = "#171717";
 var dark1 = "#272727";
@@ -106,5 +106,15 @@ function toggleTheme() {
     }
 }
 
-setTheme(dayTheme);
+function setInitialTheme() {
+    var now = new Date().getHours();
+    if (now >= 7 && now <= 18) {
+        setTheme(dayTheme);
+    } else {
+        setTheme(nightTheme);
+    }
+}
+
+setInitialTheme();
+
 browser.browserAction.onClicked.addListener(toggleTheme);
